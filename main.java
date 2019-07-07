@@ -93,8 +93,25 @@ public class main{
 	arrList.addAll(arrAdd);
 	System.out.println (arrList);
 
-	arrList.clear();//Removes everything from the array
+	//arrList.clear();//Removes everything from the array
 	System.out.println (arrList);
+
+	System.out.println ("Does contain \"S\" "+arrList.contains("S"));
+	
+//	arrList.clear();//Removes everything from the array
+	
+	System.out.println ("Is empty "+arrList.isEmpty());
+
+
+	//Iterator interface --Forward direction only
+
+	Iterator itr = arrList.iterator();
+	while(itr.hasNext()){
+		System.out.println(itr.next());
+	}
+	
+	
+	
 	
 	
 }
