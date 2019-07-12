@@ -110,9 +110,35 @@ public class main{
 		System.out.println(itr.next());
 	}
 	
+	Iterator itr2 = arrList.iterator();
+	while(itr2.hasNext()){		
+		System.out.println(itr2.next());
+	}
 	
 	
+	//Vector
+	Vector <String> v = new Vector<>();
+	v.add("S");
+	v.add("A");
+	v.add("N");
+	v.add("D");
+	v.add("U");
+	v.add("N");
+	v.add("I");
 	
-	
-}
+	Vector <String> baba = new Vector<>();
+	baba.add("B");
+	baba.add("A");
+	baba.add("B");
+	baba.add("A");
+
+	v.addAll(baba);
+
+	Iterator Vitr = v.iterator();
+
+		System.out.println("Vector");
+	while (Vitr.hasNext()){
+		System.out.println(Vitr.next());
+	}
+	}
 }
